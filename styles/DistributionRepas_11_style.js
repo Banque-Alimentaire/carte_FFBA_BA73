@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Epiceriesociale_8 = function(feature, resolution){
+var style_DistributionRepas_11 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -22,7 +22,7 @@ var style_Epiceriesociale_8 = function(feature, resolution){
     }
     var style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 5.6 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(21,126,231,1.0)'})}),
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(227,26,28,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

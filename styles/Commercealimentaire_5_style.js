@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Commercealimentaire_4 = function(feature, resolution){
+var style_Commercealimentaire_5 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}

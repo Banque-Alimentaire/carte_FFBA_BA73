@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_EPCI_1 = function(feature, resolution){
+var style_DistributionColis_10 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -21,7 +21,8 @@ var style_EPCI_1 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(23,85,146,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 3.04}),fill: new ol.style.Fill({color: 'rgba(196,60,57,0.0)'}),
+        image: new ol.style.Circle({radius: 5.6 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(51,160,44,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

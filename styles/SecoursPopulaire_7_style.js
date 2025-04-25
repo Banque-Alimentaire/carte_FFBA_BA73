@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_BanquesAlimentaires_AURA_9 = function(feature, resolution){
+var style_SecoursPopulaire_7 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -9,10 +9,10 @@ var style_BanquesAlimentaires_AURA_9 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "11.700000000000001px \'Bahnschrift SemiBold\', sans-serif";
+    var labelFont = "10px, sans-serif";
     var labelFill = "#000000";
-    var bufferColor = "#fafafa";
-    var bufferWidth = 3.0;
+    var bufferColor = "";
+    var bufferWidth = 0;
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
@@ -21,20 +21,20 @@ var style_BanquesAlimentaires_AURA_9 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 10.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(255,255,255,1.0)'})}),
+        image: new ol.style.Circle({radius: 11.2 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(255,255,255,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
         image: new ol.style.Icon({
-                  imgSize: [400, 400],
-                  scale: 0.045,
-                  anchor: [200.0, 200.0],
+                  imgSize: [400, 316],
+                  scale: 0.0475,
+                  anchor: [200.0, 158.0],
                   anchorXUnits: "pixels",
                   anchorYUnits: "pixels",
                   rotation: 0.0,
-                  src: "styles/BA (associations partenaires).svg"
+                  src: "styles/secours populaire.svg"
             }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,

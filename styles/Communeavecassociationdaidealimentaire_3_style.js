@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Ramassequotidienne_BA73_5 = function(feature, resolution){
+var style_Communeavecassociationdaidealimentaire_3 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -21,8 +21,7 @@ var style_Ramassequotidienne_BA73_5 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.RegularShape({radius: 6.0 + size, points: 4,
-            angle: Math.PI/4, displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(252,124,4,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(31,62,180,1.0)'})}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.6)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(253,242,111,0.6)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
